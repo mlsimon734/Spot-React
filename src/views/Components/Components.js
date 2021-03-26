@@ -76,10 +76,10 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
-        <SectionNavbars />
-        <SectionTabs />
         <SectionPills />
+        <SectionNavbars />
+        <SectionBasics />
+        <SectionTabs />
         <SectionNotifications />
         <SectionTypography />
         <SectionJavascript />

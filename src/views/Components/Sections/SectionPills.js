@@ -13,6 +13,8 @@ import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
+//import { Checkbox } from "@material-ui/core";
+import { CalendarToday, CalendarTodayOutlined, CalendarTodayRounded, CalendarTodaySharp, CalendarTodayTwoTone, CalendarViewDayTwoTone, Check, CheckBox, PermContactCalendarOutlined } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -23,21 +25,21 @@ export default function SectionPills() {
       <div className={classes.container}>
         <div id="navigation-pills">
           <div className={classes.title}>
-            <h3>Navigation Pills</h3>
+            <h3> Choose your Delivery Day</h3>
           </div>
-          <div className={classes.title}>
+          {/* <div className={classes.title}>
             <h3>
               <small>With Icons</small>
             </h3>
-          </div>
+          </div> */}
           <GridContainer>
-            <GridItem xs={12} sm={12} md={8} lg={6}>
+            <GridItem xs={24} sm={24} md={16} lg={12}>
               <NavPills
-                color="primary"
+                color="success"
                 tabs={[
                   {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
+                    tabButton: "Monday",
+                    tabIcon: CalendarTodayTwoTone,
                     tabContent: (
                       <span>
                         <p>
@@ -65,8 +67,8 @@ export default function SectionPills() {
                     )
                   },
                   {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
+                    tabButton: "Tuesday",
+                    tabIcon: CalendarTodayTwoTone,
                     tabContent: (
                       <span>
                         <p>
@@ -87,8 +89,8 @@ export default function SectionPills() {
                     )
                   },
                   {
-                    tabButton: "Tasks",
-                    tabIcon: List,
+                    tabButton: "Wednesday",
+                    tabIcon: CalendarTodayTwoTone,
                     tabContent: (
                       <span>
                         <p>
@@ -114,11 +116,99 @@ export default function SectionPills() {
                         </p>
                       </span>
                     )
+                  },
+                  {
+                    tabButton: "Thursday",
+                    tabIcon: CalendarTodayTwoTone,
+                    tabContent: (
+                      <span>
+                        <p>
+                          Efficiently unleash cross-media information without
+                          cross-media value. Quickly maximize timely
+                          deliverables for real-time schemas.
+                        </p>
+                        <br />
+                        <p>
+                          Dramatically maintain clicks-and-mortar solutions
+                          without functional solutions. Dramatically visualize
+                          customer directed convergence without revolutionary
+                          ROI. Collaboratively administrate empowered markets
+                          via plug-and-play networks. Dynamically procrastinate
+                          B2C users after installed base benefits.
+                        </p>
+                      </span>
+                    )
+                  },
+                  {
+                    tabButton: "Friday",
+                    tabIcon: CalendarTodayTwoTone,
+                    tabContent: (
+                      <span>
+                        <p>
+                          Efficiently unleash cross-media information without
+                          cross-media value. Quickly maximize timely
+                          deliverables for real-time schemas.
+                        </p>
+                        <br />
+                        <p>
+                          Dramatically maintain clicks-and-mortar solutions
+                          without functional solutions. Dramatically visualize
+                          customer directed convergence without revolutionary
+                          ROI. Collaboratively administrate empowered markets
+                          via plug-and-play networks. Dynamically procrastinate
+                          B2C users after installed base benefits.
+                        </p>
+                      </span>
+                    )
+                  },
+                  {
+                    tabButton: "Saturday",
+                    tabIcon: CalendarTodayTwoTone,
+                    tabContent: (
+                      <span>
+                        <p>
+                          Efficiently unleash cross-media information without
+                          cross-media value. Quickly maximize timely
+                          deliverables for real-time schemas.
+                        </p>
+                        <br />
+                        <p>
+                          Dramatically maintain clicks-and-mortar solutions
+                          without functional solutions. Dramatically visualize
+                          customer directed convergence without revolutionary
+                          ROI. Collaboratively administrate empowered markets
+                          via plug-and-play networks. Dynamically procrastinate
+                          B2C users after installed base benefits.
+                        </p>
+                      </span>
+                    )
+                  },
+                  {
+                    tabButton: "Sunday",
+                    tabIcon: CalendarTodayTwoTone,
+                    tabContent: (
+                      <span>
+                        <p>
+                          Efficiently unleash cross-media information without
+                          cross-media value. Quickly maximize timely
+                          deliverables for real-time schemas.
+                        </p>
+                        <br />
+                        <p>
+                          Dramatically maintain clicks-and-mortar solutions
+                          without functional solutions. Dramatically visualize
+                          customer directed convergence without revolutionary
+                          ROI. Collaboratively administrate empowered markets
+                          via plug-and-play networks. Dynamically procrastinate
+                          B2C users after installed base benefits.
+                        </p>
+                      </span>
+                    )
                   }
                 ]}
               />
             </GridItem>
-            <GridItem xs={12} sm={12} md={12} lg={6}>
+            {/* <GridItem xs={12} sm={12} md={12} lg={6}>
               <NavPills
                 color="rose"
                 horizontal={{
@@ -179,7 +269,7 @@ export default function SectionPills() {
                   }
                 ]}
               />
-            </GridItem>
+            </GridItem> */}
           </GridContainer>
         </div>
       </div>

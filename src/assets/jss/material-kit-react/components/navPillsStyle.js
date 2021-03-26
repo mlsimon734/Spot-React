@@ -41,7 +41,7 @@ const navPillsStyle = theme => ({
     position: "relative",
     display: "block",
     borderRadius: "30px",
-    minWidth: "100px",
+    minWidth: "13.2%",
     textAlign: "center",
     transition: "all .3s",
     padding: "10px 15px",
