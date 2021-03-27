@@ -43,7 +43,7 @@ export default function Components(props) {
     <div>
       <Header
         brand=""
-        image={require("assets/img/logo.png")}
+        image={require("assets/img/SpotLogo.png")}
         rightLinks={<HeaderLinks />}
         fixed
         color="white"

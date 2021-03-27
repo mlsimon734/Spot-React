@@ -50,7 +50,7 @@ export default function SectionPills() {
                         </div>
                       
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                      <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="info"
                             tabs={[
@@ -121,7 +121,7 @@ export default function SectionPills() {
                           <h6 className={classes.note}>6:00 to 7:00 PM</h6>
                         </div>
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                      <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="primary"
                             tabs={[
@@ -201,7 +201,7 @@ export default function SectionPills() {
                         </div>
                       
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                      <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="primary"
                             tabs={[
@@ -272,7 +272,7 @@ export default function SectionPills() {
                           <h6 className={classes.note}>6:00 to 7:00 PM</h6>
                         </div>
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                      <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="rose"
                             tabs={[
@@ -352,7 +352,7 @@ export default function SectionPills() {
                         </div>
                       
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="rose"
                             tabs={[
@@ -423,7 +423,7 @@ export default function SectionPills() {
                           <h6 className={classes.note}>6:00 to 7:00 PM</h6>
                         </div>
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="info"
                             tabs={[
@@ -503,7 +503,7 @@ export default function SectionPills() {
                         </div>
                       
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="info"
                             tabs={[
@@ -574,7 +574,7 @@ export default function SectionPills() {
                           <h6 className={classes.note}>6:00 to 7:00 PM</h6>
                         </div>
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="primary"
                             tabs={[
@@ -654,7 +654,7 @@ export default function SectionPills() {
                         </div>
                       
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="primary"
                             tabs={[
@@ -725,7 +725,7 @@ export default function SectionPills() {
                           <h6 className={classes.note}>6:00 to 7:00 PM</h6>
                         </div>
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="rose"
                             tabs={[
@@ -805,7 +805,7 @@ export default function SectionPills() {
                         </div>
                       
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="rose"
                             tabs={[
@@ -876,7 +876,7 @@ export default function SectionPills() {
                           <h6 className={classes.note}>6:00 to 7:00 PM</h6>
                         </div>
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="info"
                             tabs={[
@@ -956,7 +956,7 @@ export default function SectionPills() {
                         </div>
                       
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="info"
                             tabs={[
@@ -1027,7 +1027,7 @@ export default function SectionPills() {
                           <h6 className={classes.note}>6:00 to 7:00 PM</h6>
                         </div>
                       <GridContainer>
-                        <GridItem xs={12} sm={12} md={8} lg={6}>
+                        <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
                             color="primary"
                             tabs={[
