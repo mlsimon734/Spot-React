@@ -77,7 +77,7 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
+        {/*<SectionBasics />*/}
         <SectionPills />
         {/*<SectionNavbars />
          <SectionBasics />
