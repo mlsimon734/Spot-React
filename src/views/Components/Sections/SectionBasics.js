@@ -73,36 +73,55 @@ export default function SectionBasics() {
   return (
     <div className={classes.sections}>
       <div className={classes.container}>
-        <div id="buttons">
+        <div id="days">
 
-          <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={8}>
-              <Card style={{width: "20rem"}}>
-                <CardBody>
-                  <h6 className={classes.cardSubtitle}>DATE</h6>
-                  <h4 className={classes.cardTitle}>DAY</h4>
-                </CardBody>
-              </Card>
-              <Card style={{width: "20rem"}}>
-                <CardBody>
-                  <h6 className={classes.cardSubtitle}>DATE</h6>
-                  <h4 className={classes.cardTitle}>DAY</h4>
-                </CardBody>
-              </Card>
-              <Card style={{width: "20rem"}}>
-                <CardBody>
-                  <h6 className={classes.cardSubtitle}>DATE</h6>
-                  <h4 className={classes.cardTitle}>DAY</h4>
-                </CardBody>
-              </Card>
+          <GridContainer direction="row" justify="space-evenly" alignItems="center">
+            <GridItem xs={1}>
+              <Button lg color="white">
+                <h6 className={classes.cardSubtitle}>DATE</h6>
+                <h4 className={classes.cardTitle}>DAY</h4>
+              </Button>
             </GridItem>
-
+            <GridItem xs={1}>
+              <Button lg color="white">
+                
+                <h6 className={classes.cardSubtitle}>DATE</h6>
+                <h4 className={classes.cardTitle}>DAY</h4>
+              </Button>
+            </GridItem>
+            <GridItem xs={1}>
+              <Button lg color="white">
+                <h6 className={classes.cardSubtitle}>DATE</h6>
+                <h4 className={classes.cardTitle}>DAY</h4>
+              </Button>
+            </GridItem>
+            <GridItem xs={1}>
+              <Button lg color="white">
+                <h6 className={classes.cardSubtitle}>DATE</h6>
+                <h4 className={classes.cardTitle}>DAY</h4>
+              </Button>
+            </GridItem>
+            <GridItem xs={1}>
+              <Button lg color="white">
+                <h6 className={classes.cardSubtitle}>DATE</h6>
+                <h4 className={classes.cardTitle}>DAY</h4>
+              </Button>
+            </GridItem>
+            <GridItem xs={1}>
+              <Button lg color="white">
+                <h6 className={classes.cardSubtitle}>DATE</h6>
+                <h4 className={classes.cardTitle}>DAY</h4>
+              </Button>
+            </GridItem>
+            <GridItem xs={1}>
+              <Button lg color="white">
+                <h6 className={classes.cardSubtitle}>DATE</h6>
+                <h4 className={classes.cardTitle}>DAY</h4>
+              </Button>
+            </GridItem>
           </GridContainer>
 
         </div>
-
-
-
 
         <div className={classes.title}>
           <h2>Lunch
@@ -110,6 +129,11 @@ export default function SectionBasics() {
           </h2>
         </div>
 
+        <div className={classes.title}>
+          <h2>Dinner
+            <h4> 5:00pm - 6:00pm</h4>
+          </h2>
+        </div>
 
 
 

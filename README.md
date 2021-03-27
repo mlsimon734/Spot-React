@@ -146,7 +146,7 @@ material-kit-react
     │   │   └── GridItem.js
     │   ├── Header
     │   │   ├── Header.js
-    │   │   └── HeaderLinks.js
+    │   │   └──RHeaderLinks.js
     │   ├── InfoArea
     │   │   └── InfoArea.js
     │   ├── NavPills

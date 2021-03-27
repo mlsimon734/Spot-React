@@ -18,7 +18,8 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import LHeaderLinks from "components/Header/LHeaderLinks.js";
+import RHeaderLinks from "components/Header/RHeaderLinks.js";
 import SectionBasics from "./Sections/SectionBasics.js";
 import SectionNavbars from "./Sections/SectionNavbars.js";
 import SectionTabs from "./Sections/SectionTabs.js";
@@ -42,9 +43,9 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand=""
         image={require("assets/img/logo.png")}
-        rightLinks={<HeaderLinks />}
+        leftLinks={<LHeaderLinks />}
+        rightLinks={<RHeaderLinks />}
         fixed
         color="white"
         changeColorOnScroll={{
@@ -69,7 +70,7 @@ export default function Components(props) {
                   }}
                 />
               </GridItem>
-              <Button color="info" round size="md">See Menu</Button>
+              <Button color="spotTheme" round size="md">See Menu</Button>
             </div>
           </div>
         </div>
@@ -77,8 +78,6 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
-        <SectionNavbars />
-        <SectionTabs />
         <SectionPills />
         <SectionNotifications />
         <SectionTypography />
