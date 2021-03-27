@@ -1,5 +1,6 @@
 import {
   defaultFont,
+  logoColor,
   primaryColor,
   infoColor,
   successColor,
@@ -32,8 +33,14 @@ const typographyStyle = {
     lineHeight: "1.42857143",
     color: "#777"
   },
+  whiteText: {
+    color: "#FFFFFF"
+  },
   mutedText: {
     color: "#777"
+  },
+  spotText: {
+    color: logoColor
   },
   primaryText: {
     color: primaryColor
