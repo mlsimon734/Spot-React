@@ -27,17 +27,12 @@ export default function SectionPills() {
       <div className={classes.container}>
         <div id="navigation-pills">
           <div className={classes.title}>
-            <h3> Choose your Delivery Day</h3>
+            <h3> Choose your Delivery Date</h3>
           </div>
-          {/* <div className={classes.title}>
-            <h3>
-              <small>With Icons</small>
-            </h3>
-          </div> */}
           <GridContainer>
             <GridItem xs={24} sm={24} md={16} lg={12}>
               <NavPills
-                color="success"
+                color="logoTheme"
                 tabs={[
                   {
                     tabButton: "Monday",
@@ -48,7 +43,7 @@ export default function SectionPills() {
                           <h4 className={classes.title}>Lunch</h4>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer>
                         <GridItem xs={12} sm={12} md={8} lg={6}>
                           <NavPills
@@ -65,7 +60,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -80,7 +75,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -136,7 +131,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -151,7 +146,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -199,7 +194,7 @@ export default function SectionPills() {
                           <h4 className={classes.title}>Lunch</h4>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer>
                         <GridItem xs={12} sm={12} md={8} lg={6}>
                           <NavPills
@@ -216,7 +211,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -231,7 +226,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -287,7 +282,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -302,7 +297,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -350,7 +345,7 @@ export default function SectionPills() {
                           <h4 className={classes.title}>Lunch</h4>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer>
                         <GridItem xs={12} sm={12} md={8} lg={6}>
                           <NavPills
@@ -367,7 +362,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -382,7 +377,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -438,7 +433,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -453,7 +448,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -501,7 +496,7 @@ export default function SectionPills() {
                           <h4 className={classes.title}>Lunch</h4>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer>
                         <GridItem xs={12} sm={12} md={8} lg={6}>
                           <NavPills
@@ -518,7 +513,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -533,7 +528,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -589,7 +584,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -604,7 +599,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -652,7 +647,7 @@ export default function SectionPills() {
                           <h4 className={classes.title}>Lunch</h4>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer>
                         <GridItem xs={12} sm={12} md={8} lg={6}>
                           <NavPills
@@ -669,7 +664,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -684,7 +679,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -740,7 +735,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -755,7 +750,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -803,7 +798,7 @@ export default function SectionPills() {
                           <h4 className={classes.title}>Lunch</h4>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer>
                         <GridItem xs={12} sm={12} md={8} lg={6}>
                           <NavPills
@@ -820,7 +815,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -835,7 +830,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -891,7 +886,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -906,7 +901,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -954,7 +949,7 @@ export default function SectionPills() {
                           <h4 className={classes.title}>Lunch</h4>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer>
                         <GridItem xs={12} sm={12} md={8} lg={6}>
                           <NavPills
@@ -971,7 +966,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -986,7 +981,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -1042,7 +1037,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -1057,7 +1052,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
