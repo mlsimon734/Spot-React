@@ -1,4 +1,5 @@
 import {
+  logoColor,
   roseColor,
   primaryColor,
   infoColor,
@@ -72,6 +73,14 @@ const navPillsStyle = theme => ({
   },
   contentWrapper: {
     marginTop: "20px"
+  },
+  logoTheme: {
+    "&,&:hover": {
+      color: "#FFFFFF",
+      backgroundColor: logoColor,
+      boxShadow:
+        "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(6, 89, 18, 0.14)"
+    }
   },
   primary: {
     "&,&:hover": {

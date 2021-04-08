@@ -61,16 +61,21 @@ export default function Components(props) {
               <h1>Your Weekly Menu</h1>
             </div>
             <div className={classes.container}>
-              <GridItem>
+              <GridItem xs={10} sm={8}>
                 <CustomInput
-                labelText="Delivery Address"
+                  labelText="Delivery Address"
                   id="float"
                   formControlProps={{
                       fullWidth: true
                   }}
+                  inputProps={{
+                    placeholder: "UCLA Anderson School of Management"
+                  }}
                 />
               </GridItem>
-              <Button color="spotTheme" round size="md">See Menu</Button>
+              <GridItem xs={6} sm={4}>
+                <Button color="spotTheme" round size="md">See Menu</Button>
+              </GridItem>
             </div>
           </div>
         </div>

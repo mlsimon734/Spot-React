@@ -38,7 +38,7 @@ export default function SectionPills() {
           <GridContainer justify="center">
             <GridItem xs={24} sm={24} md={16} lg={12}>
               <NavPills
-                color="success"
+                color="logoTheme"
                 tabs={[
                   {
                     tabButton: "Monday 5/3",
@@ -190,7 +190,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -205,7 +205,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -378,7 +378,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -393,7 +393,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -566,7 +566,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -581,7 +581,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -754,7 +754,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -769,7 +769,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -942,7 +942,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -957,7 +957,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -1130,7 +1130,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -1145,7 +1145,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -1210,7 +1210,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -1225,7 +1225,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -1281,7 +1281,7 @@ export default function SectionPills() {
                                         author=" chipotle.com "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
@@ -1296,7 +1296,7 @@ export default function SectionPills() {
                                         author=" https://order.veggiegrill.com/ "
                                       />
                                     </div>
-                                    
+
                                   </span>
                                 )
                               },
