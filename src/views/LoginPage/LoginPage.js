@@ -21,7 +21,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
-import image from "assets/img/bg7.jpg";
+import image from "assets/img/bg11.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -37,7 +37,8 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="Material Kit React"
+        brand=""
+        image={require("assets/img/logo.png")}
         rightLinks={<RHeaderLinks />}
         {...rest}
       />
@@ -138,7 +139,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg">
+                    <Button simple color="primary" size="lg" href="/">
                       Get started
                     </Button>
                   </CardFooter>

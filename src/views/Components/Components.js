@@ -43,15 +43,9 @@ export default function Components(props) {
   return (
     <div>
       <Header
-<<<<<<< HEAD
-        brand=""
         image={require("assets/img/SpotLogo.png")}
-        rightLinks={<HeaderLinks />}
-=======
-        image={require("assets/img/logo.png")}
         leftLinks={<LHeaderLinks />}
         rightLinks={<RHeaderLinks />}
->>>>>>> 6232f0fffdd948ed7cabdbb4d9c32c4a6f51fa4f
         fixed
         color="white"
         changeColorOnScroll={{
@@ -83,9 +77,10 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
+        
         <SectionPills />
-        {/*<SectionNavbars />
+        {/*<SectionBasics />
+        <SectionNavbars />
          <SectionBasics />
         <SectionTabs />
         <SectionNotifications />

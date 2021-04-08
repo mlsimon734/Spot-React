@@ -30,25 +30,29 @@ export default function RHeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
+      {/* <Link  className={classes.link}> */}
         <Button
           color="white"
           variant="outlined"
-          target="_blank"
+          
           round
           className={classes.navLink}
+          //target={"_blank"}
+          href={"/login-page"}
         >
           <SpotText>
             Log In
           </SpotText>
         </Button>
+        {/* </Link> */}
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           variant="contained"
           color="spotTheme"
-          target="_blank"
           round
           className={classes.navLink}
+          href={"/signup-page"}
         >
           <White>
             Sign Up

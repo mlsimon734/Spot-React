@@ -7,7 +7,8 @@ const pillsStyle = {
   container,
   title: {
     ...title,
-    marginTop: "30px",
+    marginTop: "25px",
+    
     minHeight: "32px",
     textDecoration: "none"
   }

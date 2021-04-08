@@ -65,9 +65,10 @@ export default function Header(props) {
   const brandComponent = <Button className={classes.title}>{brand}</Button>;
   return (
     <AppBar className={appBarClasses}>
-      <img src={image} alt="..."/>
+
+      
       <Toolbar className={classes.container}>
-      <img src={image} />
+        <img src={image} />
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
           {leftLinks !== undefined ? (

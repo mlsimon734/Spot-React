@@ -34,6 +34,7 @@ export default function LHeaderLinks(props) {
           variant="outline"
           color="transparent"
           className={classes.navLink}
+          
         >
           <SpotText>
             Menus

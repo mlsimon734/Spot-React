@@ -56,7 +56,10 @@ export default function NavPills(props) {
         });
         return (
           <Tab
-            label={prop.tabButton}
+            label={<GridContainer> 
+              <GridItem> {prop.tabButton}</GridItem>
+              <GridItem> {prop.tabLabel}</GridItem>
+              </GridContainer> }
             key={key}
             {...icon}
             classes={{
@@ -89,11 +92,13 @@ export default function NavPills(props) {
   return horizontal !== undefined ? (
     <GridContainer>
       <GridItem {...horizontal.tabsGrid}>{tabButtons}</GridItem>
+    
       <GridItem {...horizontal.contentGrid}>{tabContent}</GridItem>
     </GridContainer>
   ) : (
     <div>
       {tabButtons}
+      
       {tabContent}
     </div>
   );
@@ -110,6 +115,7 @@ NavPills.propTypes = {
   tabs: PropTypes.arrayOf(
     PropTypes.shape({
       tabButton: PropTypes.string,
+      tabLabel: PropTypes.string,
       tabIcon: PropTypes.object,
       tabContent: PropTypes.node
     })
