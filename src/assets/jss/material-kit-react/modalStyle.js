@@ -8,11 +8,11 @@ const modalStyle = {
     paddingRight: "24px",
     paddingBottom: "0",
     paddingLeft: "24px",
-    minHeight: "16.43px"
+    minHeight: "36.43px"
   },
   modalTitle: {
     margin: "0",
-    lineHeight: "1.42857143"
+    lineHeight: "1.12857143"
   },
   modalCloseButton: {
     color: "#999999",
@@ -34,7 +34,7 @@ const modalStyle = {
     height: "16px"
   },
   modalBody: {
-    paddingTop: "24px",
+    paddingTop: "344px",
     paddingRight: "24px",
     paddingBottom: "16px",
     paddingLeft: "24px",

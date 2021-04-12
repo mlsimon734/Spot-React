@@ -47,8 +47,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand=""
-        image={require("assets/img/SpotLogo.png")}
+        brand="Material Kit React"
         rightLinks={<RHeaderLinks />}
         fixed
         changeColorOnScroll={{

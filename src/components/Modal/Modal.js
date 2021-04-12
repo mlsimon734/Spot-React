@@ -29,7 +29,7 @@ export default function Modal() {
   return (
     <div>
         <Button color="spotTheme" round onClick={() => setModal(true)}>
-          See Drop Locations
+          See Spot Locations
         </Button>
       <Dialog
         classes={{
@@ -57,7 +57,7 @@ export default function Modal() {
           >
             <Close className={classes.modalClose} />
           </IconButton>
-          <h4 className={classes.modalTitle}>Choose a Spot Drop</h4>
+          <h3 className={classes.modalTitle}>Choose a Spot Hub</h3>
         </DialogTitle>
         <DialogContent
           id="modal-slide-description"

@@ -45,7 +45,7 @@ export default function CheckboxRadioSwitch(){
           classes={{
             label: classes.label
           }}
-          label="Drop 1"
+          label="UCLA Anderson Main Building"
         />
       </div>
       <div className={wrapperDiv}>
@@ -73,7 +73,35 @@ export default function CheckboxRadioSwitch(){
           classes={{
             label: classes.label
           }}
-          label="Drop 2"
+          label="Eight70 Apartment Lobby"
+        />
+      </div>
+      <div className={wrapperDiv}>
+        <FormControlLabel
+          control={
+            <Radio
+              checked={selectedEnabled === "c"}
+              onChange={() => setSelectedEnabled("c")}
+              value="c"
+              name="radio button enabled"
+              aria-label="C"
+              icon={
+                <FiberManualRecord
+                  className={classes.radioUnchecked}
+                />
+              }
+              checkedIcon={
+                <FiberManualRecord className={classes.radioChecked} />
+              }
+              classes={{
+                checked: classes.radio
+              }}
+            />
+          }
+          classes={{
+            label: classes.label
+          }}
+          label="Strathmore Regency Apartment Lobby"
         />
       </div>
     </div>
