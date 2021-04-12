@@ -1,4 +1,5 @@
 import {
+  logoColor,
   primaryColor,
   dangerColor,
   roseColor,
@@ -40,7 +41,7 @@ const customCheckboxRadioSwitch = {
     marginBottom: "0"
   },
   checked: {
-    color: primaryColor + "!important"
+    color: logoColor + "!important"
   },
   checkedIcon: {
     width: "20px",
@@ -99,12 +100,12 @@ const customCheckboxRadioSwitch = {
     color: dangerColor
   },
   radio: {
-    color: primaryColor + "!important"
+    color: logoColor + "!important"
   },
   radioChecked: {
     width: "16px",
     height: "16px",
-    border: "1px solid " + primaryColor,
+    border: "1px solid " + logoColor,
     borderRadius: "50%"
   },
   radioUnchecked: {
@@ -150,7 +151,7 @@ const customCheckboxRadioSwitch = {
     lineHeight: "111px"
   },
   switchBase: {
-    color: primaryColor + "!important"
+    color: logoColor + "!important"
   },
   switchIcon: {
     boxShadow: "0 1px 3px 1px rgba(0, 0, 0, 0.4)",

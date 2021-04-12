@@ -74,7 +74,7 @@ const navPillsStyle = theme => ({
   contentWrapper: {
     marginTop: "20px"
   },
-  logoTheme: {
+  spotTheme: {
     "&,&:hover": {
       color: "#FFFFFF",
       backgroundColor: logoColor,

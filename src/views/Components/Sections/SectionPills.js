@@ -38,7 +38,7 @@ export default function SectionPills() {
           <GridContainer justify="center">
             <GridItem xs={24} sm={24} md={16} lg={12}>
               <NavPills
-                color="logoTheme"
+                color="spotTheme"
                 tabs={[
                   {
                     tabButton: "Monday 5/3",
@@ -49,9 +49,9 @@ export default function SectionPills() {
                                   <h3 className={classes.title}>Lunch</h3>
                                   <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                          
-                            {/* <GridContainer justify="center" alignItems={"center"}>   
-                              <GridItem xs={2}  justify="center" ></GridItem>                         
+
+                            {/* <GridContainer justify="center" alignItems={"center"}>
+                              <GridItem xs={2}  justify="center" ></GridItem>
                               <GridItem xs={2}  justify="center" >
                                 <div className={classes.typo + " " + classes.textCenter}>
                                   <h3 className={classes.title}>Lunch</h3>
@@ -63,13 +63,13 @@ export default function SectionPills() {
                                 </div>
                               </GridItem>
                             </GridContainer> */}
-                          
-                        
-                        
+
+
+
                       <GridContainer justify="center">
                         <GridItem xs={10} sm={10} md={10} lg={10} justify="center">
                           <NavPills
-                            color="info"
+                            color="spotTheme"
                             tabs={[
                               {
                                 tabButton: "Chipotle",
@@ -78,11 +78,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://chipotle.com/order"
                                           target="_blank"
@@ -101,11 +101,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://order.veggiegrill.com/"
                                           target="_blank"
@@ -115,7 +115,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -125,11 +125,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://www.starbucks.com/menu "
                                           target="_blank"
@@ -139,7 +139,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -149,11 +149,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                   <GridContainer justify={"center"}>
-                                    
+
                                     <GridItem xs={11} >
-                                      <Button 
-                                        color="facebook" 
-                                        size="re" 
+                                      <Button
+                                        color="facebook"
+                                        size="re"
                                         default
                                         href=" https://order.mendocinofarms.com/ "
                                         target="_blank"
@@ -163,7 +163,7 @@ export default function SectionPills() {
                                     </GridItem>
                                   </GridContainer>
                                 </div>
-                                  
+
                                 )
                               }
                             ]}
@@ -253,7 +253,7 @@ export default function SectionPills() {
                           <h3 className={classes.title}>Lunch</h3>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer justify="center">
                       <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
@@ -266,11 +266,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://chipotle.com/order"
                                           target="_blank"
@@ -289,11 +289,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://order.veggiegrill.com/"
                                           target="_blank"
@@ -303,7 +303,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -313,11 +313,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://www.starbucks.com/menu "
                                           target="_blank"
@@ -327,7 +327,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -337,11 +337,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                   <GridContainer justify={"center"}>
-                                    
+
                                     <GridItem xs={11} >
-                                      <Button 
-                                        color="facebook" 
-                                        size="re" 
+                                      <Button
+                                        color="facebook"
+                                        size="re"
                                         default
                                         href=" https://order.mendocinofarms.com/ "
                                         target="_blank"
@@ -351,7 +351,7 @@ export default function SectionPills() {
                                     </GridItem>
                                   </GridContainer>
                                 </div>
-                                  
+
                                 )
                               }
                             ]}
@@ -441,7 +441,7 @@ export default function SectionPills() {
                           <h3 className={classes.title}>Lunch</h3>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer justify="center">
                         <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
@@ -454,11 +454,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://chipotle.com/order"
                                           target="_blank"
@@ -477,11 +477,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://order.veggiegrill.com/"
                                           target="_blank"
@@ -491,7 +491,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -501,11 +501,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://www.starbucks.com/menu "
                                           target="_blank"
@@ -515,7 +515,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -525,11 +525,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                   <GridContainer justify={"center"}>
-                                    
+
                                     <GridItem xs={11} >
-                                      <Button 
-                                        color="facebook" 
-                                        size="re" 
+                                      <Button
+                                        color="facebook"
+                                        size="re"
                                         default
                                         href=" https://order.mendocinofarms.com/ "
                                         target="_blank"
@@ -539,7 +539,7 @@ export default function SectionPills() {
                                     </GridItem>
                                   </GridContainer>
                                 </div>
-                                  
+
                                 )
                               }
                             ]}
@@ -629,7 +629,7 @@ export default function SectionPills() {
                           <h3 className={classes.title}>Lunch</h3>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer justify="center">
                         <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
@@ -642,11 +642,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://chipotle.com/order"
                                           target="_blank"
@@ -665,11 +665,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://order.veggiegrill.com/"
                                           target="_blank"
@@ -679,7 +679,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -689,11 +689,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://www.starbucks.com/menu "
                                           target="_blank"
@@ -703,7 +703,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -713,11 +713,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                   <GridContainer justify={"center"}>
-                                    
+
                                     <GridItem xs={11} >
-                                      <Button 
-                                        color="facebook" 
-                                        size="re" 
+                                      <Button
+                                        color="facebook"
+                                        size="re"
                                         default
                                         href=" https://order.mendocinofarms.com/ "
                                         target="_blank"
@@ -727,7 +727,7 @@ export default function SectionPills() {
                                     </GridItem>
                                   </GridContainer>
                                 </div>
-                                  
+
                                 )
                               }
                             ]}
@@ -817,7 +817,7 @@ export default function SectionPills() {
                           <h3 className={classes.title}>Lunch</h3>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer justify="center">
                         <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
@@ -830,11 +830,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://chipotle.com/order"
                                           target="_blank"
@@ -853,11 +853,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://order.veggiegrill.com/"
                                           target="_blank"
@@ -867,7 +867,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -877,11 +877,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://www.starbucks.com/menu "
                                           target="_blank"
@@ -891,7 +891,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -901,11 +901,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                   <GridContainer justify={"center"}>
-                                    
+
                                     <GridItem xs={11} >
-                                      <Button 
-                                        color="facebook" 
-                                        size="re" 
+                                      <Button
+                                        color="facebook"
+                                        size="re"
                                         default
                                         href=" https://order.mendocinofarms.com/ "
                                         target="_blank"
@@ -915,7 +915,7 @@ export default function SectionPills() {
                                     </GridItem>
                                   </GridContainer>
                                 </div>
-                                  
+
                                 )
                               }
                             ]}
@@ -1005,7 +1005,7 @@ export default function SectionPills() {
                           <h3 className={classes.title}>Lunch</h3>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer justify="center">
                         <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
@@ -1018,11 +1018,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://chipotle.com/order"
                                           target="_blank"
@@ -1041,11 +1041,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://order.veggiegrill.com/"
                                           target="_blank"
@@ -1055,7 +1055,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -1065,11 +1065,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                     <GridContainer justify={"center"}>
-                                      
+
                                       <GridItem xs={11} >
-                                        <Button 
-                                          color="facebook" 
-                                          size="re" 
+                                        <Button
+                                          color="facebook"
+                                          size="re"
                                           default
                                           href="https://www.starbucks.com/menu "
                                           target="_blank"
@@ -1079,7 +1079,7 @@ export default function SectionPills() {
                                       </GridItem>
                                     </GridContainer>
                                   </div>
-                                  
+
                                 )
                               },
                               {
@@ -1089,11 +1089,11 @@ export default function SectionPills() {
                                 tabContent: (
                                   <div className={classes.textCenter}>
                                   <GridContainer justify={"center"}>
-                                    
+
                                     <GridItem xs={11} >
-                                      <Button 
-                                        color="facebook" 
-                                        size="re" 
+                                      <Button
+                                        color="facebook"
+                                        size="re"
                                         default
                                         href=" https://order.mendocinofarms.com/ "
                                         target="_blank"
@@ -1103,7 +1103,7 @@ export default function SectionPills() {
                                     </GridItem>
                                   </GridContainer>
                                 </div>
-                                  
+
                                 )
                               }
                             ]}
@@ -1193,7 +1193,7 @@ export default function SectionPills() {
                           <h3 className={classes.title}>Lunch</h3>
                           <h6 className={classes.note}>12:00 to 1:00 PM</h6>
                         </div>
-                      
+
                       <GridContainer justify="center">
                         <GridItem xs={20} sm={20} md={15} lg={10}>
                           <NavPills
@@ -1338,7 +1338,7 @@ export default function SectionPills() {
                 ]}
               />
             </GridItem>
-            
+
           </GridContainer>
         </div>
       </div>

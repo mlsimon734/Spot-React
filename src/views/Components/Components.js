@@ -17,6 +17,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+import Modal from "components/Modal/Modal.js";
 // sections for this page
 import LHeaderLinks from "components/Header/LHeaderLinks.js";
 import RHeaderLinks from "components/Header/RHeaderLinks.js";
@@ -54,7 +55,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/tacos.jpg")}>
+      <Parallax image={require("assets/img/tossed-salad.jpeg")}>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <div className={classes.title}>
@@ -63,18 +64,18 @@ export default function Components(props) {
             <div className={classes.container}>
               <GridItem xs={10} sm={8}>
                 <CustomInput
-                  labelText="Delivery Address"
+                  labelText="Delivery Zipcode"
                   id="float"
                   formControlProps={{
                       fullWidth: true
                   }}
                   inputProps={{
-                    placeholder: "UCLA Anderson School of Management"
+                    placeholder: "90024"
                   }}
                 />
               </GridItem>
               <GridItem xs={6} sm={4}>
-                <Button color="spotTheme" round size="md">See Menu</Button>
+                <Modal />
               </GridItem>
             </div>
           </div>
@@ -82,7 +83,7 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        
+
         <SectionPills />
         {/*<SectionBasics />
         <SectionNavbars />

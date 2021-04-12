@@ -2,7 +2,8 @@ import {
   primaryColor,
   dangerColor,
   successColor,
-  defaultFont
+  defaultFont,
+  logoColor
 } from "assets/jss/material-kit-react.js";
 
 const customInputStyle = {
