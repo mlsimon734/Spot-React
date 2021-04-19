@@ -66,7 +66,7 @@ export default function Header(props) {
   return (
     <AppBar className={appBarClasses}>
 
-      
+
       <Toolbar className={classes.container}>
         <img src={image} />
         {leftLinks !== undefined ? brandComponent : null}
@@ -118,6 +118,7 @@ Header.defaultProp = {
 
 Header.propTypes = {
   color: PropTypes.oneOf([
+    "spotTheme",
     "primary",
     "info",
     "success",
@@ -143,6 +144,7 @@ Header.propTypes = {
   changeColorOnScroll: PropTypes.shape({
     height: PropTypes.number.isRequired,
     color: PropTypes.oneOf([
+      "spotTheme",
       "primary",
       "info",
       "success",

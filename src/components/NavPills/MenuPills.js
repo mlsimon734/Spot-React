@@ -18,14 +18,16 @@ import styles from "assets/jss/material-kit-react/components/navPillsStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function NavPills(props) {
+export default function MenuPills(props) {
   const [active, setActive] = React.useState(props.active);
   const handleChange = (event, active) => {
-    setActive(active);
+    setActive(active);  // manages which tab is selected
   };
+
   const handleChangeIndex = index => {
     setActive(index);
   };
+
   const classes = useStyles();
   const { tabs, direction, color, horizontal, alignCenter } = props;
   const flexContainerClasses = classNames({
@@ -99,12 +101,12 @@ export default function NavPills(props) {
   );
 }
 
-NavPills.defaultProps = {
+MenuPills.defaultProps = {
   active: 0,
   color: "primary"
 };
 
-NavPills.propTypes = {
+MenuPills.propTypes = {
   // index of the default active pill
   active: PropTypes.number,
   tabs: PropTypes.arrayOf(

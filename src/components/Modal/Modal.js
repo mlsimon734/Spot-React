@@ -28,9 +28,9 @@ export default function Modal() {
   const classes = useStyles();
   return (
     <div>
-        <Button color="spotTheme" round onClick={() => setModal(true)}>
-          See Spot Locations
-        </Button>
+      <Button color="spotTheme" round onClick={() => setModal(true)}>
+        See Spot Locations
+      </Button>
       <Dialog
         classes={{
           root: classes.center,
