@@ -108,6 +108,11 @@ const roseBoxShadow = {
     "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4)"
 };
 
+const spotThemeCardHeader = {
+  color: "#fff",
+  background: "linear-gradient(60deg, #6a9b71, #1f6a2a)",
+  ...successBoxShadow
+};
 const warningCardHeader = {
   color: "#fff",
   background: "linear-gradient(60deg, #ffa726, #fb8c00)",
@@ -208,6 +213,7 @@ export {
   warningBoxShadow,
   dangerBoxShadow,
   roseBoxShadow,
+  spotThemeCardHeader,
   warningCardHeader,
   successCardHeader,
   dangerCardHeader,

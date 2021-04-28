@@ -1,4 +1,5 @@
 import {
+  spotThemeCardHeader,
   warningCardHeader,
   successCardHeader,
   dangerCardHeader,
@@ -19,6 +20,7 @@ const cardHeaderStyle = {
     marginLeft: "0px",
     marginRight: "0px"
   },
+  spotThemeCardHeader,
   warningCardHeader,
   successCardHeader,
   dangerCardHeader,
