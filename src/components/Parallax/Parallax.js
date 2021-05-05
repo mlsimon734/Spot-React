@@ -52,6 +52,7 @@ export default function Parallax(props) {
         transform: transform
       }}
     >
+
       {children}
     </div>
   );

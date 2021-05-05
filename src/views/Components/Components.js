@@ -1,14 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-
-// @material-ui/container
-
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -21,18 +17,9 @@ import Modal from "components/Modal/Modal.js";
 // sections for this page
 import LHeaderLinks from "components/Header/LHeaderLinks.js";
 import RHeaderLinks from "components/Header/RHeaderLinks.js";
-import SectionBasics from "./Sections/SectionBasics.js";
-import SectionNavbars from "./Sections/SectionNavbars.js";
-import SectionTabs from "./Sections/SectionTabs.js";
 import SectionPills from "./Sections/SectionPills.js";
-import SectionNotifications from "./Sections/SectionNotifications.js";
-import SectionTypography from "./Sections/SectionTypography.js";
-import SectionJavascript from "./Sections/SectionJavascript.js";
-import SectionCarousel from "./Sections/SectionCarousel.js";
-import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
-import SectionLogin from "./Sections/SectionLogin.js";
-import SectionExamples from "./Sections/SectionExamples.js";
-import SectionDownload from "./Sections/SectionDownload.js";
+// form control
+import { useForm } from "react-hook-form";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -40,6 +27,15 @@ const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
+  const {register, handleSubmit} = useForm();
+  const [zipcode, setZip] = useState(111111);
+  const [outposts, setPosts] = useState([]);
+
+  const onSubmit = (data) => {
+    alert(JSON.stringify(data));
+
+  };
+
   const { ...rest } = props;
   return (
     <div>
@@ -58,26 +54,35 @@ export default function Components(props) {
       <Parallax image={require("assets/img/tossed-salad.jpeg")}>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div className={classes.title}>
-              <h1>Your Weekly Menu</h1>
-            </div>
-            <div className={classes.container}>
-              <GridItem xs={10} sm={8}>
-                <CustomInput
-                  labelText="Delivery Zipcode"
-                  id="float"
-                  formControlProps={{
-                      fullWidth: true
-                  }}
-                  inputProps={{
-                    placeholder: "90024"
-                  }}
-                />
-              </GridItem>
-              <GridItem xs={6} sm={4}>
-                <Modal />
-              </GridItem>
-            </div>
+            <GridContainer justify="center">
+              <div className={classes.title}>
+                <h1>Your Weekly Menu</h1>
+              </div>
+            </GridContainer>
+            <form className={classes.form} onSubmit={handleSubmit(onSubmit)}>
+              <GridContainer justify="center">
+                <div className={classes.container}>
+                  <GridItem xs={8}>
+                    <CustomInput
+                      labelText="Address"
+                      id="float"
+                      formControlProps={{
+                          fullWidth: true
+                      }}
+                      inputProps={{
+                        placeholder: "456 Landfair Ave, Los Angeles"
+                      }}
+                      inputRef={register}
+                    />
+                  </GridItem>
+                  <GridItem xs={4}>
+                    <Modal
+
+                    />
+                  </GridItem>
+                </div>
+              </GridContainer>
+            </form>
           </div>
         </div>
       </Parallax>
@@ -85,25 +90,6 @@ export default function Components(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
 
         <SectionPills />
-        {/*<SectionBasics />
-        <SectionNavbars />
-         <SectionBasics />
-        <SectionTabs />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavascript />
-        <SectionCarousel />
-        <SectionCompletedExamples />*/}
-        {/* <SectionLogin />
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
-        </GridItem> */}
-        {/* <SectionExamples />
-        <SectionDownload /> */}
       </div>
       <Footer />
     </div>

@@ -9,6 +9,7 @@ import People from "@material-ui/icons/People";
 // core components
 import Header from "components/Header/Header.js";
 import RHeaderLinks from "components/Header/RHeaderLinks.js";
+import LHeaderLinks from "components/Header/LHeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -36,10 +37,11 @@ export default function LoginPage(props) {
     <div>
       <Header
         absolute
-        color="transparent"
+        color="white"
         brand=""
         image={require("assets/img/logo.png")}
         rightLinks={<RHeaderLinks />}
+        leftLinks={<LHeaderLinks />}
         {...rest}
       />
       <div
@@ -55,7 +57,7 @@ export default function LoginPage(props) {
             <GridItem xs={12} sm={12} md={4}>
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form}>
-                  <CardHeader color="primary" className={classes.cardHeader}>
+                  <CardHeader color="spotTheme" className={classes.cardHeader}>
                     <h4>Login</h4>
                     <div className={classes.socialLine}>
                       <Button
@@ -87,7 +89,6 @@ export default function LoginPage(props) {
                       </Button>
                     </div>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
                   <CardBody>
                     <CustomInput
                       labelText="First Name..."
@@ -140,7 +141,7 @@ export default function LoginPage(props) {
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
                     <Button simple color="primary" size="lg" href="/">
-                      Get started
+                      Get Started
                     </Button>
                   </CardFooter>
                 </form>
