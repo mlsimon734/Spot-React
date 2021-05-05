@@ -34,7 +34,7 @@ const modalStyle = {
     height: "16px"
   },
   modalBody: {
-    paddingTop: "344px",
+    paddingTop: "24px",
     paddingRight: "24px",
     paddingBottom: "16px",
     paddingLeft: "24px",
