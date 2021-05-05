@@ -75,6 +75,7 @@ function SignInButton(props) {
       className={classes.navLink}
       href={"/signup-page"}
       onClick={props.onClick}
+      hoverColor={"#63976B"}
     >
       <White>
         Sign Up

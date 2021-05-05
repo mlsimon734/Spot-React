@@ -33,7 +33,11 @@ export default function Modal(props) {
   const classes = useStyles();
   return (
     <div>
-      <Button color="spotTheme" onClick={() => setModal(true)}>
+      <Button color="spotTheme"
+        onClick={() => setModal(true)}
+        type="submit"
+        className={classes.submit}
+      >
         See Spot Locations
       </Button>
       <Dialog
@@ -84,6 +88,7 @@ export default function Modal(props) {
 
 Modal.propTypes = {
   zipcode: PropTypes.number,
+
   className: PropTypes.string,
   color: PropTypes.oneOf(["spotTheme","warning", "success", "danger", "info", "primary"]),
   children: PropTypes.node

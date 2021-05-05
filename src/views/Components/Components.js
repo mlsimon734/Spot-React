@@ -19,7 +19,7 @@ import LHeaderLinks from "components/Header/LHeaderLinks.js";
 import RHeaderLinks from "components/Header/RHeaderLinks.js";
 import SectionPills from "./Sections/SectionPills.js";
 // form control
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -27,13 +27,12 @@ const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
-  const {register, handleSubmit} = useForm();
+  const {register, handleSubmit, control} = useForm();
   const [zipcode, setZip] = useState(111111);
   const [outposts, setPosts] = useState([]);
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data));
-
   };
 
   const { ...rest } = props;
@@ -51,44 +50,52 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/tossed-salad.jpeg")}>
-        <div className={classNames(classes.main, classes.mainRaised)}>
-          <div className={classes.container}>
-            <GridContainer justify="center">
-              <div className={classes.title}>
-                <h1>Your Weekly Menu</h1>
-              </div>
-            </GridContainer>
-            <form className={classes.form} onSubmit={handleSubmit(onSubmit)}>
+      <div className={classes.section}>
+        <Parallax image={require("assets/img/tossed-salad.jpeg")}>
+          <div className={classNames(classes.main, classes.mainRaised)}>
+            <div className={classes.container}>
               <GridContainer justify="center">
-                <div className={classes.container}>
-                  <GridItem xs={8}>
-                    <CustomInput
-                      labelText="Address"
-                      id="float"
-                      formControlProps={{
-                          fullWidth: true
-                      }}
-                      inputProps={{
-                        placeholder: "456 Landfair Ave, Los Angeles"
-                      }}
-                      inputRef={register}
-                    />
-                  </GridItem>
-                  <GridItem xs={4}>
-                    <Modal
-
-                    />
-                  </GridItem>
+                <div className={classes.title}>
+                  <h1>Your Weekly Menu</h1>
                 </div>
               </GridContainer>
-            </form>
+              <form className={classes.form} onSubmit={handleSubmit((data) => console.log(data))}>
+                <GridContainer justify="center">
+                  <div className={classes.container}>
+                    <GridItem xs={8}>
+                      <Controller
+                        render={(props) =>
+                          <CustomInput
+                            labelText="Address" id="float"
+                            formControlProps={{
+                              fullWidth: true
+                            }}
+                            inputProps={{
+                              placeholder: "456 Landfair Ave, Los Angeles",
+                              inputRef: {register},
+                              name: "address",
+                              required: true
+                            }}
+                            {...rest}
+                          />}
+                        name="address"
+                        control={control}
+                      />
+                    </GridItem>
+                    <GridItem xs={4}>
+                      <Modal
+
+                      />
+                    </GridItem>
+                  </div>
+                </GridContainer>
+              </form>
+            </div>
           </div>
-        </div>
-      </Parallax>
+        </Parallax>
+      </div>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-
         <SectionPills />
       </div>
       <Footer />

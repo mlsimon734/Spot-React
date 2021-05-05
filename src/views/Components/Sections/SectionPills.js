@@ -16,17 +16,9 @@ import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
 //import { Checkbox } from "@material-ui/core";
 import {
-  CalendarToday,
-  CalendarTodayOutlined,
-  CalendarTodayRounded,
-  CalendarTodaySharp,
   CalendarTodayTwoTone,
-  CalendarViewDayTwoTone,
-  Check,
-  CheckBox,
   EmojiFoodBeverageRounded,
   FastfoodOutlined,
-  PermContactCalendarOutlined,
   Restaurant
 } from "@material-ui/icons";
 
