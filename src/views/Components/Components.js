@@ -13,6 +13,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+
 import Modal from "components/Modal/Modal.js";
 // sections for this page
 import LHeaderLinks from "components/Header/LHeaderLinks.js";
@@ -20,20 +21,24 @@ import RHeaderLinks from "components/Header/RHeaderLinks.js";
 import SectionPills from "./Sections/SectionPills.js";
 // form control
 import { useForm, Controller } from "react-hook-form";
-
+// Places form
+import PlacesAutoComplete from "react-places-autocomplete";
+// Styling
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
-  const {register, handleSubmit, control} = useForm();
-  const [zipcode, setZip] = useState(111111);
-  const [outposts, setPosts] = useState([]);
+  const {handleSubmit, setValue, control} = useForm();
+  const [addressData, setAddressData] = useState("");
+  const [outpostData, setOutpostData] = useState([]);
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data));
   };
+
+  const handleSelect = async value => {};
 
   const { ...rest } = props;
   return (
@@ -46,46 +51,78 @@ export default function Components(props) {
         color="white"
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
       <div className={classes.section}>
         <Parallax image={require("assets/img/tossed-salad.jpeg")}>
           <div className={classNames(classes.main, classes.mainRaised)}>
-            <div className={classes.container}>
+            <div className={classes.container} justify="center">
               <GridContainer justify="center">
                 <div className={classes.title}>
                   <h1>Your Weekly Menu</h1>
                 </div>
               </GridContainer>
-              <form className={classes.form} onSubmit={handleSubmit((data) => console.log(data))}>
+              <form className={classes.form} onSubmit={handleSubmit(onSubmit)}>
                 <GridContainer justify="center">
                   <div className={classes.container}>
                     <GridItem xs={8}>
                       <Controller
-                        render={(props) =>
-                          <CustomInput
-                            labelText="Address" id="float"
-                            formControlProps={{
-                              fullWidth: true
-                            }}
-                            inputProps={{
-                              placeholder: "456 Landfair Ave, Los Angeles",
-                              inputRef: {register},
-                              name: "address",
-                              required: true
-                            }}
-                            {...rest}
-                          />}
+                        render={({ field }) => (
+                          <PlacesAutoComplete
+                            value={addressData}
+                            onChange={setAddressData}
+                            onSelect={handleSelect}
+                          >
+                            {({
+                              getInputProps,
+                              suggestions,
+                              getSuggestionItemProps,
+                              loading,
+                            }) => (
+                              <div>
+                                {/* <input
+                                  {...getInputProps({
+                                    placeholder:
+                                      "456 Landfair Ave, Los Angeles",
+                                  })}
+                                /> */}
+                                <CustomInput
+                                  placeholder="456 Landfair Ave, Los Angeles"
+                                  labelText="Address"
+                                  id="float"
+                                  formControlProps={{
+                                    fullWidth: true,
+                                  }}
+                                  inputProps={{
+                                    ...getInputProps({
+                                      placeholder:"456 Landfair Ave, Los Angeles",
+                                      name: "address",
+                                      required: true,
+                                    })
+                                  }}
+                                />
+                                <div>
+                                  {loading ? <div>...loading</div> : null}
+                                  {suggestions.map((suggestion) => {
+                                    const style = {
+                                      backgroundColor: suggestion.active ? "#41b6e6" : "#ffffff"
+                                    };
+                                    return <div {...getSuggestionItemProps(suggestion, { style })}>{suggestion.description}</div>;
+                                  })}
+                                </div>
+                              </div>
+                            )}
+                          </PlacesAutoComplete>
+                        )}
                         name="address"
                         control={control}
+                        defaultValue=""
                       />
                     </GridItem>
                     <GridItem xs={4}>
-                      <Modal
-
-                      />
+                      <Modal type="submit" />
                     </GridItem>
                   </div>
                 </GridContainer>
