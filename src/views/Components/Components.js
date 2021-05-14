@@ -25,12 +25,15 @@ import { useForm, Controller } from "react-hook-form";
 import PlacesAutoComplete from "react-places-autocomplete";
 // Styling
 import styles from "assets/jss/material-kit-react/views/components.js";
+// images
+import logo from "assets/img/SpotLogo.png";
+import parallaxBackground from "assets/img/tossed-salad.jpeg";
 
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
-  const {handleSubmit, setValue, control} = useForm();
+  const { register, errors, handleSubmit, control } = useForm();
   const [addressData, setAddressData] = useState("");
   const [outpostData, setOutpostData] = useState([]);
 
@@ -44,7 +47,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        image={require("assets/img/SpotLogo.png")}
+        image={logo}
         leftLinks={<LHeaderLinks />}
         rightLinks={<RHeaderLinks />}
         fixed
@@ -56,7 +59,7 @@ export default function Components(props) {
         {...rest}
       />
       <div className={classes.section}>
-        <Parallax image={require("assets/img/tossed-salad.jpeg")}>
+        <Parallax image={parallaxBackground}>
           <div className={classNames(classes.main, classes.mainRaised)}>
             <div className={classes.container} justify="center">
               <GridContainer justify="center">
@@ -69,7 +72,7 @@ export default function Components(props) {
                   <div className={classes.container}>
                     <GridItem xs={8}>
                       <Controller
-                        render={({ field }) => (
+                        render={({ field: { ref } }) => (
                           <PlacesAutoComplete
                             value={addressData}
                             onChange={setAddressData}
@@ -82,12 +85,6 @@ export default function Components(props) {
                               loading,
                             }) => (
                               <div>
-                                {/* <input
-                                  {...getInputProps({
-                                    placeholder:
-                                      "456 Landfair Ave, Los Angeles",
-                                  })}
-                                /> */}
                                 <CustomInput
                                   placeholder="456 Landfair Ave, Los Angeles"
                                   labelText="Address"
@@ -97,19 +94,36 @@ export default function Components(props) {
                                   }}
                                   inputProps={{
                                     ...getInputProps({
-                                      placeholder:"456 Landfair Ave, Los Angeles",
+                                      placeholder:
+                                        "456 Landfair Ave, Los Angeles",
                                       name: "address",
                                       required: true,
-                                    })
+                                      ref: {
+                                        ...register("address", {
+                                          required:
+                                            "You must submit your location",
+                                        }),
+                                      },
+                                    }),
                                   }}
                                 />
                                 <div>
                                   {loading ? <div>...loading</div> : null}
                                   {suggestions.map((suggestion) => {
                                     const style = {
-                                      backgroundColor: suggestion.active ? "#41b6e6" : "#ffffff"
+                                      backgroundColor: suggestion.active
+                                        ? "#d3d3d3"
+                                        : "#ffffff",
                                     };
-                                    return <div {...getSuggestionItemProps(suggestion, { style })}>{suggestion.description}</div>;
+                                    return (
+                                      <div
+                                        {...getSuggestionItemProps(suggestion, {
+                                          style,
+                                        })}
+                                      >
+                                        {suggestion.description}
+                                      </div>
+                                    );
                                   })}
                                 </div>
                               </div>

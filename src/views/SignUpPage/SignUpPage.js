@@ -22,6 +22,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "assets/img/bg12.jpg";
+import logo from "assets/img/SpotLogo.png";
 
 const useStyles = makeStyles(styles);
 
@@ -38,7 +39,7 @@ export default function SignUpPage(props) {
         absolute
         color="transparent"
         //brand="SPOT"
-        image={require("assets/img/logo.png")}
+        image={logo}
         rightLinks={<RHeaderLinks />}
         {...rest}
       />
